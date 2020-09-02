@@ -9,8 +9,8 @@ import java.io.InputStream;
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assert;
+import org.junit.jupiter.api.Test;
 import org.objectweb.asmx.ClassReader;
 
 import scenelib.annotations.el.AScene;

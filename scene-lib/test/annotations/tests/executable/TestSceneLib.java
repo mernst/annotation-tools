@@ -9,8 +9,8 @@ import com.sun.tools.javac.code.TypeAnnotationPosition.TypePathEntryKind;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import scenelib.annotations.*;
 import scenelib.annotations.el.*;
