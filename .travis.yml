@@ -80,7 +80,7 @@ script:
      export TRAVIS_PULL_REQUEST_BRANCH=${TRAVIS_PULL_REQUEST_BRANCH} &&
      export TRAVIS_PULL_REQUEST_SLUG=${TRAVIS_PULL_REQUEST_SLUG} &&
      export TRAVIS_REPO_SLUG=$TRAVIS_REPO_SLUG &&
-     ./.travis-build.sh $GROUP"
+     ./.build.sh $GROUP"
 
 jobs:
   include:
@@ -98,7 +98,7 @@ jobs:
 
             git ls-remote https://github.com/${SLUGOWNER}/checker-framework.git &>/dev/null
             if [ "$?" -eq 0 ]; then
-              sh trigger-travis.sh ${SLUGOWNER} checker-framework $TRAVIS_ACCESS_TOKEN
+              sh trigger-travis.sh --pro ${SLUGOWNER} checker-framework $TRAVIS_ACCESS_TOKEN
             fi
           fi
 
